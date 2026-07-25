@@ -18,7 +18,7 @@ export interface Ticket {
   status: 'loading' | 'ready' | 'error'
 }
 
-const ease = { duration: 0.2, ease: [0.2, 0, 0, 1] }
+const ease = { duration: 0.2, ease: [0.2, 0, 0, 1] as const }
 
 interface ItemProps {
   ticket: Ticket

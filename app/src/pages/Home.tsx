@@ -14,7 +14,7 @@ import { buildDateRangeFileName, parseTripDate, sanitizeFileName } from '@/lib/n
 let idCounter = 0
 const nextId = () => `t-${Date.now()}-${idCounter++}`
 
-const ease = { duration: 0.2, ease: [0.2, 0, 0, 1] }
+const ease = { duration: 0.2, ease: [0.2, 0, 0, 1] as const }
 
 function firstFreeSlot(tickets: Ticket[]): number | null {
   const used = new Set(tickets.map((t) => t.slot).filter((s) => s !== null))

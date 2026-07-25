@@ -17,7 +17,7 @@ interface PreviewProps {
 
 const { widthMm: PW, heightMm: PH } = A4_LANDSCAPE
 const pct = (mm: number, total: number) => `${(mm / total) * 100}%`
-const ease = { duration: 0.2, ease: [0.2, 0, 0, 1] }
+const ease = { duration: 0.2, ease: [0.2, 0, 0, 1] as const }
 
 interface DragState {
   ticketId: string
