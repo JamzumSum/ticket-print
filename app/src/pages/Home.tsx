@@ -263,13 +263,13 @@ export default function Home() {
               setDragOver(false)
               addFiles(e.dataTransfer.files)
             }}
-            className={`cursor-pointer rounded-xl border-2 border-dashed bg-card p-6 text-center transition-all duration-200 ease-[cubic-bezier(0.2,0,0,1)] ${
+            className={`cursor-pointer rounded-xl border-2 border-dashed bg-card p-6 text-center transition-all duration-200 ease-&lsqb;cubic-bezier(0.2,0,0,1)&rsqb; ${
               dragOver
                 ? 'border-primary bg-primary/[0.03]'
                 : 'border-border hover:border-primary/60'
             }`}
           >
-            <div className={`mx-auto mb-2 flex h-11 w-11 items-center justify-center rounded-lg transition-transform duration-200 ease-[cubic-bezier(0.2,0,0,1)] ${
+            <div className={`mx-auto mb-2 flex h-11 w-11 items-center justify-center rounded-lg transition-transform duration-200 ease-&lsqb;cubic-bezier(0.2,0,0,1)&rsqb; ${
               dragOver ? '-translate-y-0.5 bg-primary/20' : 'bg-primary/10'
             }`}>
               <UploadCloud className="h-6 w-6 text-primary" />
